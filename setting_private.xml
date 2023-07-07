@@ -9,14 +9,14 @@
     <server>
       <id>nexusdeploymentrepo</id>
       <username>admin</username>
-      <password>admin</password>
+      <password>admin@nexus</password>
     </server>
   </servers>
   <mirrors>
     <mirror>
       <id>nexus</id>
       <mirrorOf>*</mirrorOf>
-      <url>http://34.125.180.159:8081/repository/maven-public</url>
+      <url>http://localhost:8081/repository/nexus-proxy-repo/</url>
     </mirror>
   </mirrors>
   <profiles>
@@ -38,7 +38,7 @@
        <repository>
          <id>nexus-snapshot-repo</id>
          <name>your custom repo</name>
-         <url>http://35.188.22.253:8081/repository/maven-snapshots/</url>
+         <url>http://localhost:8081/repository/nexus-proxy-repo/</url>
        </repository>
            
      </repositories>
@@ -49,7 +49,7 @@
        <repository>
          <id>nexus-release-repo</id>
          <name>your custom repo</name>
-         <url>http://35.202.104.9:8081/repository/maven-releases/</url>
+         <url>http://localhost:8081/repository/nexus-proxy-repo/</url>
        </repository>
      </repositories>
    </profile>
